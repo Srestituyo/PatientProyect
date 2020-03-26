@@ -1,0 +1,7 @@
+C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\bin\Debug\PatientProyect.exe.config
+C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\bin\Debug\PatientProyect.exe
+C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\bin\Debug\PatientProyect.pdb
+C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.csprojAssemblyReference.cache
+C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.csproj.CoreCompileInputs.cache
+C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.exe
+C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.pdb
