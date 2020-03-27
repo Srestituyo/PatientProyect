@@ -75,9 +75,7 @@ namespace PatientProyect
             } while (true | acciones == "s" | acciones == "si");
 
 
-            
 
-            
             Patient p1 = new Patient("Fulano", "Mengano");
 
 
@@ -96,6 +94,8 @@ namespace PatientProyect
 
 
             Console.ReadKey();
+
+
         }
     }
 }
