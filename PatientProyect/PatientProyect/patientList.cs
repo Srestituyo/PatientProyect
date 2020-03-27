@@ -98,7 +98,7 @@ namespace PatientProyect
 
         public Patient[] All()
         {
-            Patient[] patients = new Patient[countss];
+            Patient[] patients = new Patient[count];
             PatientListNode runner = head;
             int contador = 1;
             while (runner != null)
@@ -107,12 +107,15 @@ namespace PatientProyect
                 for (int x = 0; x < patients.Length; x++)
                 {
                     patients[x] = runner.data;
+                    runner = runner.next;
+                   
                 }
 
-                runner = runner.next;
+                Array.Reverse(patients);
                 contador++;
 
             }
+          
             return patients;
         }
 
