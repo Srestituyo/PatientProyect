@@ -11,25 +11,25 @@ namespace PatientProyect
     {
         static void Main(string[] args)
         {
-            
-            PatientList patientList = new PatientList();
 
-            Patient.addDisorder(1);
-            Patient.addDisorder(8);
+            Patient p1 = new Patient();
 
-            
+            p1.Nombre = "Fulano";
+            p1.Apellido = "Mengano";
 
-            
 
-            Console.WriteLine(Patient.hasDisorder(16));
-            for (int i = 0; i < Patient.Disorders.Count; i++)
+            p1.addDisorder(1);
+            p1.addDisorder(8);
+
+            Console.WriteLine(p1.hasDisorder(16));
+            for (int i = 0; i < p1.Disorders.Count; i++)
             {
-                Console.WriteLine(Patient.Disorders[i]);
+                Console.WriteLine(p1.Disorders[i]);
             }
 
-            Console.WriteLine(Patient.isHealthy());
+            Console.WriteLine(p1.isHealthy());
 
-            Patient.Estado();
+            p1.Estado();
 
 
             Console.ReadKey();
