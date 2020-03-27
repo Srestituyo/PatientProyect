@@ -11,11 +11,74 @@ namespace PatientProyect
     {
         static void Main(string[] args)
         {
+            string opción, método, acciones;
 
-            Patient p1 = new Patient();
 
-            p1.Nombre = "Fulano";
-            p1.Apellido = "Mengano";
+            do
+            {
+                Console.Write("-----------------------------------------");
+                Console.WriteLine("¿Qué desea hacer?");
+                Console.WriteLine("1) - Ver el tamaño de la lista");
+                Console.WriteLine("2) - Agregar paciente");
+                Console.WriteLine("3) - Ver la condición del paciente");
+                Console.WriteLine("4) - Remover paciete");
+                Console.WriteLine("5) - Ver todos los pacientes");
+                Console.Write("-----------------------------------------");
+                opción = Console.ReadLine();
+                Console.Clear();
+
+                switch (opción)
+                {
+                    case "1":
+                        {
+
+                        }
+                        break;
+
+                    case "2":
+                        {
+
+                        }
+                        break;
+
+                    case "3":
+                        {
+
+                        }
+                        break;
+
+                    case "4":
+                        {
+
+                        }
+                        break;
+
+                    case "5":
+                        {
+
+                        }
+                        break;
+
+                    default:
+                        {
+                            Console.WriteLine("Seleccione una opción válida...");
+                        }
+                        break;
+                }
+                do
+                {
+                    Console.Write("¿Desea seguir? Sino desea seguir presione n");
+                    acciones = Console.ReadLine().ToLower();
+                } while (acciones != "n" && acciones != "s" && acciones != "si" && acciones != "no");
+                Console.Clear();
+
+            } while (true | acciones == "s" | acciones == "si");
+
+
+            
+
+            
+            Patient p1 = new Patient("Fulano", "Mengano");
 
 
             p1.addDisorder(1);
