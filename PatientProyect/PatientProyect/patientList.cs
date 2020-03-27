@@ -98,7 +98,7 @@ namespace PatientProyect
 
         public Patient[] All()
         {
-            Patient[] patients = new Patient[10];
+            Patient[] patients = new Patient[countss];
             PatientListNode runner = head;
             int contador = 1;
             while (runner != null)
