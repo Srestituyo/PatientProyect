@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PatientProyect;
+using PatientProyect.Interface;
 
 namespace PatientProyect
 {
@@ -12,7 +13,8 @@ namespace PatientProyect
         static void Main(string[] args)
         {
 
-            PatientList LinkedList = new PatientList();
+            PatientLinkedList LinkedList = new PatientLinkedList();
+            PatientArryaList ArrayList = new PatientArryaList();
 
 
 
@@ -27,17 +29,29 @@ namespace PatientProyect
             p2.addDisorder(16);
             p2.addDisorder(4);
 
-
+            //Linked List add()
             LinkedList.Add(p1);
             LinkedList.Add(p2);
 
+            //ArrayList List add()
+            ArrayList.Add(p1);
+            ArrayList.Add(p2);
+
+
+
             Patient[] listaLinked = LinkedList.All();
+            Object[] arrayList = ArrayList.All();
 
           
 
             for (int i = 0; i < listaLinked.Length; i++)
             {
                 Console.WriteLine(listaLinked[i].Nombre);
+            }  
+            
+            for (int i = 0; i < arrayList.Length; i++)
+            {
+                Console.WriteLine(arrayList[i]);
             }
 
             
