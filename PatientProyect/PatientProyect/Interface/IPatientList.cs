@@ -1,18 +1,21 @@
 ﻿
-using System;
-
 namespace PatientProyect.Interface
 {
-    interface IPatientList
+    class IPatientList
     {
-        int PositiveIntergerOrZero(int num);
+        public interface IPatientLinkedList<Patient>
+        {
 
-        Boolean Add(string name, string lastName);
+            int Size(int num);
 
-        Boolean Contains(string name, string lastName);
+            bool Add(Patient element);
 
-        Boolean Remove(string name, string lastName);
+            bool Contains(Patient element);
 
-        string[] All();
+            bool Remove(Patient element);
+
+            string[] All();
+        }
     }
 }
+
