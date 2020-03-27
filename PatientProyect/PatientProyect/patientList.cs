@@ -50,7 +50,7 @@ namespace PatientProyect
 
             for (int x = 0; x <= count; x++)
             {
-                if (!Equals(currentNode.data, element))
+                if (currentNode.data.Apellido == element.Apellido && currentNode.data.Nombre == element.Nombre)
                 {
                     return true;
                 }
