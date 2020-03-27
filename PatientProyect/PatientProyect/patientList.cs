@@ -1,42 +1,120 @@
-﻿using PatientProyect.Interface;
-using PatientProyect.Models;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using static PatientProyect.Interface.IPatientList;
 
 namespace PatientProyect
 {
-    class PatientList: IPatientList
+    class PatientListNode
     {
-         List list = new List();
+        public Patient data;
+        public PatientListNode next;
 
-        public int PositiveIntergerOrZero(int num) 
+        public PatientListNode(Patient element)
         {
-            //Number validation
-            return num;
-        } 
-        
-        public Boolean Add(string name, string lastName) 
+            data = element;
+            next = null;
+        }
+    }
+
+    class PatientList
+    {
+        int count;
+        PatientListNode head;
+
+        public PatientList()
         {
-            //Add patient 
+            head = null;
+            count = 0;
+        }
+
+        public bool Add(Patient element)
+        {
+            PatientListNode node = new PatientListNode(element);
+
+            node.next = head;
+            head = node;
+            count++;
+
             return true;
         }
 
-        public Boolean Contains(string name, string lastName) 
+        public bool Contains(Patient element)
         {
-            //Get patient
-            return true;
-        }
-        
-        public Boolean Remove(string name, string lastName) 
-        {
-            //Remove patient
-            return true;
+            var currentNode = head;
+
+            PatientListNode node = new PatientListNode(currentNode.data);
+            if (element == null || count == 0)
+            {
+                return false;
+            }
+
+            for (int x = 0; x <= count; x++)
+            {
+                if (!Equals(currentNode.data, element))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
-        public string[] All () 
+        public bool Remove(Patient element)
         {
-            //Get all patient
-            string[] array = new string[] { "Hello im patient" };
-            return array;
+
+            var currentNode = head;
+
+            PatientListNode node = new PatientListNode(currentNode.data);
+            PatientListNode zero = new PatientListNode(new Patient("Vacio", "Vacio"));
+            if (element == null || count == 0)
+            {
+                return false;
+            }
+
+            for (int x = 0; x < count; x++)
+            {
+                if (Equals(currentNode.data, element))
+                {
+                    node = zero;
+                    node.next = currentNode.next;
+                }
+            }
+
+            //Element was not found in the list
+            if (Equals(currentNode, null))
+            {
+                return false;
+            }
+
+            if (currentNode == head)
+            {
+                head = currentNode;
+                count--;
+                return true;
+            }
+
+            return false;
         }
+
+        public Patient[] All()
+        {
+            Patient[] patients = new Patient[10];
+            PatientListNode runner = head;
+            int contador = 1;
+            while (runner != null)
+            {
+
+                for (int x = 0; x < patients.Length; x++)
+                {
+                    patients[x] = runner.data;
+                }
+
+                runner = runner.next;
+                contador++;
+
+            }
+            return patients;
+        }
+
     }
 }
