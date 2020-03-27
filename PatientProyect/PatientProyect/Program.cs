@@ -34,6 +34,7 @@ namespace PatientProyect
             Console.WriteLine($"Conatins patient {patient1.Apellido} : {contains}");
             patientList.Remove(patient);
             patientList.All();
+            patientList.All();
 
 
 

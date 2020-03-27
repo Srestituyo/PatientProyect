@@ -87,7 +87,7 @@ namespace PatientProyect
 
             if (currentNode == head)
             {
-                head = currentNode;
+                head = currentNode.next;
                 count--;
                 return true;
             }

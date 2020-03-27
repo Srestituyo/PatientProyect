@@ -5,3 +5,9 @@ C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientPr
 C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.csproj.CoreCompileInputs.cache
 C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.exe
 C:\Users\Samuel\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.pdb
+C:\Users\sebas\Source\Repos\PatientProyect\PatientProyect\PatientProyect\bin\Debug\PatientProyect.exe.config
+C:\Users\sebas\Source\Repos\PatientProyect\PatientProyect\PatientProyect\bin\Debug\PatientProyect.exe
+C:\Users\sebas\Source\Repos\PatientProyect\PatientProyect\PatientProyect\bin\Debug\PatientProyect.pdb
+C:\Users\sebas\Source\Repos\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.csprojAssemblyReference.cache
+C:\Users\sebas\Source\Repos\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.exe
+C:\Users\sebas\Source\Repos\PatientProyect\PatientProyect\PatientProyect\obj\Debug\PatientProyect.pdb
