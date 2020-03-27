@@ -9,12 +9,11 @@ namespace PatientProyect
     class Patient
     {
         public static string nombre = "Fulano";
-        public static string apellidos = "Mengano";
-        public static List<string> Disorders = new List<string>();
-        public static string[] enfermedades = {"Alcohol Addiction", "Anorexia", "Antisocial", "Anxiety", "Bipolar", "Bulimia", "Dependent (lack of self" +
-                    "confidence" , "Depression", "Kleptomaniac", "Nicotine addiction", "Obsessive-compulsive", "Panic", "Paranoid", "Post-traumatic stress",
-            "Programmer", "Tester",};
 
+        public static string apellidos = "Mengano";
+
+        public static List<string> Disorders = new List<string>();
+       
         public static string DisorderGet(uint x)
         {
             for (int i = 0; i < enfermedades.Length; i++)
@@ -28,6 +27,7 @@ namespace PatientProyect
             }
             return "";
         }
+
         public static bool hasDisorder(uint disorder)
         {
             string checkDisorder = DisorderGet(disorder);
@@ -41,6 +41,7 @@ namespace PatientProyect
                 return false;
             }
         }
+
         public static bool addDisorder(uint x)
         {
             string newDisorder = DisorderGet(x);
@@ -86,6 +87,27 @@ namespace PatientProyect
             }
         }
 
+        public static string[] enfermedades =
+        {
+            "Alcohol Addiction",
+            "Anorexia",
+            "Antisocial",
+            "Anxiety",
+            "Bipolar",
+            "Bulimia",
+            "Dependent (lack of self confidence)",
+            "Depression",
+            "Kleptomaniac",
+            "Nicotine addiction",
+            "Obsessive-compulsive",
+            "Panic",
+            "Paranoid",
+            "Post-traumatic stress",
+            "Programmer",
+            "Tester",
+        };
+
+        
     }
 }
     

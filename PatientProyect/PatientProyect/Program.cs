@@ -11,8 +11,15 @@ namespace PatientProyect
     {
         static void Main(string[] args)
         {
+            
+            PatientList patientList = new PatientList();
+
             Patient.addDisorder(1);
             Patient.addDisorder(8);
+
+            
+
+            
 
             Console.WriteLine(Patient.hasDisorder(16));
             for (int i = 0; i < Patient.Disorders.Count; i++)
